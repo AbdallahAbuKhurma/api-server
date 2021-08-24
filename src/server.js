@@ -7,6 +7,7 @@ const notFoundHandler = require('../src/error-handlers/404');
 const errorHandler = require('../src/error-handlers/500');
 const foodRouter = require('../src/routes/food');
 const clothesRouter = require('../src/routes/clothes');
+const storeRouter = require('../src/routes/store-front');
 const app = express();
 
 app.use(express.json());
@@ -16,6 +17,7 @@ app.use(logger);
 
 app.use('/api/v1/food', foodRouter);
 app.use('/api/v1/clothes', clothesRouter);
+app.use('/api/v1/store', storeRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello World');
