@@ -11,6 +11,6 @@ const storeSchema = mongoose.Schema({
   count: Number,
 });
 
-const StoreModel = mongoose.model('food', storeSchema);
+const StoreModel = mongoose.model('store', storeSchema);
 
 module.exports = StoreModel;
