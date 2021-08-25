@@ -54,9 +54,9 @@ router.get('/', getStoreData);
 
 router.get('/:id', getStoreData);
 
-router.post('/', validator, createStoreData);
+router.post('/', createStoreData);
 
-router.put('/:id', validator ,updateStoreData);
+router.put('/:id', updateStoreData);
 
 router.delete('/:id', deleteStoreData);
 
